@@ -47,7 +47,7 @@ function Navbar() {
                 : "fixed left-[-100%] "
             }
           >
-            <h3 className='text-center text-bold px-4 py-3 mb-5'>Let's build something together!</h3>
+            <h3 className='text-center text-bold px-4 py-3 mb-5'>{"Let's build something together!"}</h3>
             <hr className='bg-neutral-700'/>
             <ul className="mt-20 uppercase flex flex-col justify-center items-center">
               <li className="mb-5 border-b border-black">Home</li>
@@ -57,7 +57,7 @@ function Navbar() {
              
             </ul> 
             <hr className='bg-neutral-700'/>
-            <h3 className='text-center mt-6'>let's connect!</h3>
+            <h3 className='text-center mt-6'>{"let's connect!"}</h3>
             <div className='flex justify-center items-center mt-3'>
                 {data.map((d)=>(
                     <button key={d.id} className='ml-2 p-2'>{d.logo}</button>
