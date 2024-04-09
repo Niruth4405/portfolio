@@ -15,7 +15,7 @@ function Navbar() {
   }
   return (
     <>
-      <nav className="fixed z-[100] w-full">
+      <nav className="fixed z-[100] w-full bg-[#ecf0f3] shadow-xl">
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 py-4">
           <h2 className="text-blue-900">
             <i>Portfolio.</i>
@@ -24,7 +24,7 @@ function Navbar() {
             <Link href="/">
               <li className="ml-6">Home</li>
             </Link>
-            <Link href="about">
+            <Link href="/about">
               <li className="ml-6">About</li>
             </Link>
             <Link href="skills">
