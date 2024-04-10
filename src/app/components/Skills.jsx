@@ -3,9 +3,9 @@ import React from "react";
 function Skills() {
   return (
     <>
-      <div className="w-full h-screen mt-[400px] md:mt-[100px] mb-10">
-        <p className='text-center font-bold'>{"Here's a few things that I'm comfortable working with"}</p>
-        <div className="mx-auto flex flex-col md:grid grid-cols-4 gap-5 mt-10 p-5">{data.map((d)=>(
+      <div className="w-full h-screen ">
+        <p className='text-center font-bold pt-[100px]'>{"Here's a few things that I'm comfortable working with"}</p>
+        <div className="mx-auto flex flex-col md:grid grid-cols-4 gap-5 mt-5 p-5">{data.map((d)=>(
             <div key={d.id} className='bg-white rounded-xl flex flex-col'>
                 <div>
                 <img src={d.logo} alt="" className='w-[150px] mx-auto'/>

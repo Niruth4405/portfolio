@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Link from "next/link";
 import { IoCloseOutline } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
@@ -13,6 +13,7 @@ function Navbar() {
   function handlenav() {
     setnav(!nav);
   }
+  
   return (
     <>
       <nav className="fixed z-[100] w-full bg-[#ecf0f3] shadow-xl">
@@ -24,25 +25,25 @@ function Navbar() {
             <Link href="/">
               <li className="ml-6">Home</li>
             </Link>
-            <Link href="/about">
+            <Link href="/About">
               <li className="ml-6">About</li>
             </Link>
-            <Link href="skills">
+            <Link href="/Skills">
               <li className="ml-6">Skills</li>
             </Link>
-            <Link href="contact">
-              <li className="ml-6 mr-6">contact</li>
+            <Link href="/Projects">
+              <li className="ml-6 mr-6">Projects</li>
             </Link>
           </ul>
           <div
             className="flex justify-end items-center md:hidden"
             onClick={handlenav}
           >
-            {!nav ? <IoCloseOutline size={20} /> : <FiMenu size={20} />}
+            {!nav ? <FiMenu size={20} /> : <IoCloseOutline size={20} />}
           </div>
           <div
             className={
-              !nav
+              nav
                 ? "fixed left-0 top-0 w-[60%] h-full border-r bg-[#ecf0f3] border-r-gray-900 ease-in-out duration-500 md:hidden"
                 : "fixed left-[-100%] "
             }
@@ -50,10 +51,10 @@ function Navbar() {
             <h3 className='text-center text-bold px-4 py-3 mb-5'>{"Let's build something together!"}</h3>
             <hr className='bg-neutral-700'/>
             <ul className="mt-20 uppercase flex flex-col justify-center items-center">
-              <li className="mb-5 border-b border-black">Home</li>
-              <li className="mb-5 border-b border-black">About</li>
-              <li className="mb-5 border-b border-black">Skills</li>
-              <li className="mb-20 border-b border-black">Contact</li>
+              <Link href='/'><li className="mb-5 border-b border-black">Home</li></Link>
+              <Link href='/About'><li className="mb-5 border-b border-black">About</li></Link>
+              <Link href='/Skills'><li className="mb-5 border-b border-black">Skills</li></Link>
+              <Link href='/Projects'><li className="mb-20 border-b border-black">Projects</li></Link>
              
             </ul> 
             <hr className='bg-neutral-700'/>

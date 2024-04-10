@@ -4,9 +4,10 @@ function About() {
   return (
     <>
       <div className="h-screen w-full px-10">
+        <div className='h-screen max-w-[1250px] '>
         <div className="mx-auto flex flex-col gap-5 md:grid grid-cols-2">
           <div className='m-auto md:ml-7'>
-            <p className='text-blue-900 mb-2 text-xl'>About</p>
+            <p className='text-blue-900 mb-2 text-xl mt-20'>About</p>
             <h2 className='text-start'>Who Am I?</h2>
             <p className='leading leading-7 mt-5'>
               {"Hello, I'm Niruth Ananth! As a 20-year-old enthusiast, I'm deeply\
@@ -23,9 +24,10 @@ function About() {
             
           </div>
           <div className='w-[200px] md:w-[300px] mx-auto mt-2 flex justify-center items-center'>
-            <img src="https://i.pinimg.com/736x/57/d7/8d/57d78ddd142c05490f28af0649ab0416.jpg" alt="" className='mx-auto rounded-lg'/>
+            <img src="https://i.pinimg.com/736x/57/d7/8d/57d78ddd142c05490f28af0649ab0416.jpg" alt="" className='mx-auto rounded-lg mt-20'/>
           </div>
           
+        </div>
         </div>
       </div>
     </>
